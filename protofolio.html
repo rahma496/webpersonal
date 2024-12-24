@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1200/400') center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        nav {
+            background: #333;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 60px;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .about-text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .skill-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 150px;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        button {
+            background: #2c3e50;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background: #34495e;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Siti Rohmatu Saniah</h1>
+        <p></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#projects">pengalaman</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="saya4.JPEG" alt="saya.JPEG">
+                </div>
+                <div class="about-text">
+                    <p>Selamat datang di portofolio saya! saya Siti Rohmatu Saniah, Lahir dikota Serang 01-01-2004, Alamat Kp.Kulul Leugeut, Desa Siketug, Kecamatan Ciomas, Kabupaten Serang-Banten. Sekarang saya sedang menempuh pendidikan S1 ilmu komputer di Universitas Banten Jaya. Saya memiliki kemampuan berkomunikasi dengan baik, Memiliki pengalaman dalam organisasi kampus dan dapat bekerja dalam tim .</p>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>PENGALAMAN</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="himasi.JPEG" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Pengalaman 1</h3>
+                        <p>Anggota Divisi Himasi Universitas Banten Jaya.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="kpps.JPEG" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Pengalaman 2</h3>
+                        <p>Aggoa Kpps pilkada 2024.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="osis.JPEG" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Pengalaman 3</h3>
+                        <p>Wakil Ketua Osis di MA Al-Ihsan Pandeglang.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Keahlian</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Professional</h3>
+                </div>
+                <div class="skill-card">
+                    <h3>Kerja Sama</h3>
+                </div>
+                <div class="skill-card">
+                    <h3>Kreatif</h3>
+                </div>
+                <div class="skill-card">
+                    <h3>Organisasi</h3>
+                </div>
+                <div class="skill-card">
+                    <h3>Fleksibel</h3>
+                </div>
+                <div class="skill-card">
+   </h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>kontak</h2>
+                <div class="contact-grid">
+                    
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>sitirohmatusaniah@gmail.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telepon</h3>
+                    <p>+62 83850054217</p>
+                </div>
+                <section id="contact">
+            <h2>Hubungan Saya</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" id="Nama" name="Nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Siti Rohmatu Saniah. All rights reserved.</p>
+    </footer>
+</body>
+</html>
